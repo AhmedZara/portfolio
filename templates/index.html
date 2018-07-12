@@ -18,7 +18,7 @@
                     <h3>ADDRESS : No 10 'E' 4th street Broadway Road cross  Shivajinagar, BANGALORE-51</h5>
                 </div>
                 <div class="my-header-right">
-                    <img src="https://thedailyq.org/wp-content/uploads/2013/08/Nayab-Malik-profile.png" alt="profile picture">
+                    <img src="{{url_for('static',filename='meduim/pic.jpg')}}" alt="profile picture">
                 </div>
             </header>
             <article>
@@ -75,19 +75,19 @@
                           <th>MARKS</th>
                         </tr>
                         <tr>
-                          <td>UG SPECIALIZATION</td>
+                          <td>   UG SPECIALIZATION   </td>
                           <td>HKBK COLLEGE OF ENGINEERING, VTU </td> 
                           <td>2019</td>
                           <td>7.6</td>
                         </tr>
                         <tr>
-                             <td>PUC</td>
+                             <td>   PUC  </td>
                              <td>St. Annes PU college, State board </td> 
                              <td>2015</td>
                              <td>74%</td>
                         </tr>
                         <tr>
-                                <td>SSLC</td>
+                                <td>  SSLC  </td>
                                 <td>B.M. English school, State board </td> 
                                 <td>2013</td>
                                 <td>80%</td>
@@ -97,14 +97,21 @@
                 <div class="article-6">
                     <h3>PERSONAL INFO</h3>
                     <h4>Father's Name : SYED AHMED</h4>
-                    <h4>Mother's NAme : SHAMSHUNNISA</h4>
+                    <h4>Mother's Name : SHAMSHUNNISA</h4>
                     <h4>Gender : Female</h4>
                     <h4>Languages Known : English, Hindi, Urdu, kannada</h4>
-
+                
                 </div>
             </article>
             <footer>
-
+                <form action="/contactme", method="POST">
+                    <h3>Contact Me</h3>
+                    First name:<br>
+                    <input type="text" name="firstname"><br>
+                    Last name:<br>
+                    <input type="text" name="lastname">
+                    <input type="submit" value="Submit">
+                  </form>
             </footer>
         </section>
     <script>
